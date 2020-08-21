@@ -1,0 +1,15 @@
+.icon-parent{
+	position: relative;
+}
+.icon-bullet:after{
+	content: attr(data-content);
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	height: 16px;
+	width: 16px;
+	background-color: #f44336;
+	border-radius: 50%;
+	line-height: 16px;
+	font-size: 12px;
+}

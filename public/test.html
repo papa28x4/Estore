@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const initState = {
+                            items:[
+                                {
+                                    productId: 1,
+                                    productName: "Album 1",
+                                    altPrice: 24.99,
+                                    price: 12.99,
+                                    url: "Images/Album 1.png",
+                                    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus culpa sed repellendus. Tempora ipsa ut in harum consequuntur nam, debitis temporibus unde commodi distinctio fugiat pariatur!"
+                                },
+                                {
+                                    productId: 2,
+                                    productName: "Album 2",
+                                    altPrice: 19.99,
+                                    price: 14.99,
+                                    url: "Images/Album 2.png",
+                                    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus et vitae voluptas nisi reiciendis ex quo nobis mollitia illum excepturi asperiores, pariatur unde possimus quidem tenetur aut cum cumque corrupti"
+                                },
+                                {
+                                    productId: 3,
+                                    productName: "Album 3",
+                                    altPrice: 12.99,
+                                    price: 9.99,
+                                    url: "Images/Album 3.png",
+                                    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas est voluptatum asperiores autem molestiae quia perspiciatis accusamus repellat repellendus, veritatis qui hic neque quis mollitia vitae"
+                                },
+                                {
+                                    productId: 4,
+                                    productName: "Album 4",
+                                    altPrice: 30.99,
+                                    price: 19.99,
+                                    url: "Images/Album 4.png",
+                                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sunt ad eius laborum deleniti omnis facere. Esse necessitatibus aspernatur tempore iure dolorem, officia laboriosam, possimus dolorum!"
+                                }
+                            ],
+                            cart:[
+                                {productId: 1, qty: 1},
+                                {productId: 2, qty: 3} 
+                            ],
+                            figures:{
+                                discount: '',
+                                disabled: false,
+                                subtotal: 100,
+                                pickupSavings: -3.85,
+                                taxes: 0,
+                                estimatedTotal: 0
+                            }
+   
+                        }
+
+                        
+
+                const a = initState.cart.map(cartItem => {
+                    const match = initState.items.find(item=>item.productId === cartItem.productId)
+                    const newObj = {...cartItem}
+                    newObj.price = match.price
+                    return newObj
+                })
+                const sum = a.reduce((a,b)=>{
+                    return a + (b.qty * b.price)
+                },0)
+                // initState.items.filter(item => )
+                console.log(a)
+                console.log(sum)
+                console.log(initState)
+                const x=[8]
+                if(!x){
+                    console.log(true)
+                }else{
+                    console.log(false)
+                }
+
+    </script>
+</body>
+</html>

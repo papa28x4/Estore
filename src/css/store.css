@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+/* 
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.wrapper{
+    margin: 0;
+}
+
+
+.header{
+    background: url("/Images/Background.jpg");
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    color: white;
+    padding: 0 0 1rem 0;
+}
+
+body{
+    font-family: Raleway, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    
+}
+li{
+    list-style: none
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+h1{
+    font-size: 4.2rem;
+    padding-top: 0.8rem;
+    letter-spacing: 0.3rem;
+}
+
+nav{
+    border-bottom: 1px solid #777;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1% 2%; 
+}
+
+.nav-links li{
+    animation: slideIn 0.5s ease-in forwards;
+}
+
+.nav-links li:nth-child(1){
+    transform: translateX(-800px)
+}
+
+.nav-links li:nth-child(2){
+    transform: translateY(-400px);
+    animation: bounce 0.5s ease-in 0.3s forwards;
+}
+
+.nav-links li:nth-child(3){
+    transform: translateX(800px);
+}
+
+.nav-links a{
+    position: relative;
+    padding: 5% 0;
+}
+.nav-links a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a::after,
+.nav-links a::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #2D9BCD;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in;
+}
+
+.nav-links a::after{
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.nav-links a::before{
+    top: 0;
+    transform-origin: left;
+}
+
+.nav-links a:hover::before,
+.nav-links a:hover::after{
+    transform: scaleX(1)
+}
+
+@keyframes slideIn{
+    from{
+
+    }
+    to{
+        transform: translateX(0)
+    }
+}
+
+@keyframes bounce{
+    from{
+
+    }
+    70%{
+        transform: translateY(2px)
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+
+.hdr-btn{
+    display: block;
+    border: 2px solid #2D9BCD;
+    padding: 0.85rem;
+    font-size: 1.2rem;
+    color: white;
+    background: transparent;
+    margin: 1.6rem auto;
+}
+
+.hdr-btn:hover{
+    background: rgba(0,0,0,0.3);
+    transform: scale(1.1);
+}
+
+.play-btn{
+    border-radius: 50%;
+    color: #2D9CDB;
+    font-size: 4rem;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    padding: 0.1rem 0.7rem;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr 4fr 2fr;
+    text-align: left;
+    padding: 2% 0;
+    border-bottom:1px solid #111;
+}
+
+.schedule{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.buyTicket{
+    padding: 5% 6%;
+    width: 45%;
+    border-radius: 5px;
+    color: white;
+    /* background-color: #56CCF2; */
+    /* background-color: #be2edd; */
+    background-image: linear-gradient(45deg, #000000, #be2edd);
+    font-size: 0.7em;
+    font-weight: 700;
+    border: #56CCF2;
+}
+
+.buyTicket:hover{
+    background-color: #2D9BCD;
+}
+
+.date{
+    color: #333;
+    font-weight: bold;
+}
+
+.location{
+    color: #777
+}
+
+.footer{
+    background-color: #56CCF2;
+    margin-top: 4%;
+    color: white;
+    display: flex;
+    height: 15vh;
+}
+
+.footer-text{
+    width: 60%;
+    font-size: 3em;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    align-items: center; 
+}
+
+.social img{
+    width: 6%;
+    height: 20%;
+}
+
+.music-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    margin: 0 auto;
+    grid-row-gap: 5%;
+}
+
+h2{
+    font-size: 2em;
+    font-family: "Metal Mania"
+}
+.music-grid .price{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.music-grid>div{
+    width: 75%;
+}
+
+.music-grid>div:nth-child(2n) {
+   justify-self: right;
+}
+
+img{
+    width: 100%;
+}
+.music-grid li P{
+        font-weight: bold;
+    }
+
+.addToCart{
+    /* width: 10%; */
+}
+
+.merch{
+    padding-top: 5%;
+}
+
+#coffee-Li{
+    /* border: 2px solid green; */
+    padding-top: 26%;
+}
+
+.cart{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cart-item li{
+    border-bottom: 1px solid grey;
+    align-self: center;
+    height: 100%;   
+}
+
+.cart-item:last-child li{
+    border-bottom: transparent;
+}
+
+#cart-grid{
+    border-bottom: 1px solid black;
+}
+
+.cart-header li{
+    text-transform: uppercase;
+    font-size: 140%;
+    font-weight: 550;
+    border-bottom: 1px solid black;
+    text-align: left;
+    color: #333;
+}
+
+.cart-item{
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-column-gap: 5%;
+}
+
+.cart-item img{
+    width: 20%;
+    border-radius: 5px;
+    margin-right: 10%;
+}
+
+.removebtn{
+    background-color: #EB5757;
+}
+
+.removebtn:hover{
+    background-color: #CC4C4C;
+}
+
+input[type="number"]{
+    width:35%;
+    padding: 4%;
+    margin-right: 10%;
+}
+
+.item li p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 145%;
+}
+
+.amount{
+  margin-top: 35%;
+}
+.qty{
+    margin-top: 14%;
+}
+
+#summation {
+    width: 30%;
+    margin: 0 0 5% 70%;
+}
+
+#summation p{
+    padding: 0 5% 0 25%;
+    font-weight: bold;
+    font-size: 160%;
+}
+#summation span:first-of-type{
+   padding-left: 25%;
+}
+
+.purchase{
+    width: 20%;
+    padding: 2%;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+.change-qty{
+    display: flex; 
+    width: 45%; 
+    height: 48px;
+    align-items: center;
+}
+.change-qty>*{
+    flex: 1;
+}
+.change-qty>button{
+    background-image: linear-gradient(275deg, #000000, #be2edd);
+    border-color: #be2edd;
+    color: white;
+}
+.change-qty>button:focus{
+    outline: none;
+}

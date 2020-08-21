@@ -1,0 +1,31 @@
+{
+    "items":[
+        {
+            "productName": "Album 1",
+            "price": 12.99,
+            "url": "Images/Album 1.png",
+           "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus culpa sed repellendus. Tempora ipsa ut in harum consequuntur nam, debitis temporibus unde commodi distinctio fugiat pariatur!"
+        },
+        {
+            "productName": "Album 2",
+            "price": 14.99,
+            "url": "Images/Album 2.png",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus et vitae voluptas nisi reiciendis ex quo nobis mollitia illum excepturi asperiores, pariatur unde possimus quidem tenetur aut cum cumque corrupti"
+        },
+        {
+            "productName": "Album 3",
+            "price": 9.99,
+            "url": "Images/Album 3.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas est voluptatum asperiores autem molestiae quia perspiciatis accusamus repellat repellendus, veritatis qui hic neque quis mollitia vitae"
+        },
+        {
+            "productName": "Album 4",
+            "price": 19.99,
+            "url": "Images/Album 4.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sunt ad eius laborum deleniti omnis facere. Esse necessitatibus aspernatur tempore iure dolorem, officia laboriosam, possimus dolorum!"
+        }
+    ],
+    "cart":[
+        
+    ]
+}

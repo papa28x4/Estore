@@ -1,0 +1,52 @@
+.purchase-card{
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,.19);
+  padding: 1em;
+}
+.row{
+  margin-bottom: 10px;
+}
+.item-details-button,
+.item-details-button:hover{
+  text-decoration: underline;
+  color: #00b7ff!important;
+  background-color: #fff!important;
+  border: none!important;
+}
+.item-details-button:focus,
+.item-details-button:active{
+    outline: none!important;
+    border:none!important;
+    box-shadow: none!important;
+  }
+
+  .price-strike{
+    color: grey;
+    text-decoration: line-through;
+  }
+
+  .bg-grey{
+    background-color: #eee;
+  }
+
+  :disabled{
+    cursor: not-allowed;
+  }
+
+  .section-header{
+    margin: 20px;
+  }
+
+  .about-text{
+    margin: 20px 0;
+    line-height: 1.8rem;
+    text-align: left;
+  }
+
+  .about-band-image{
+    max-height: 400px;
+  }
+/* 
+  img{
+    width:100%
+  } */
