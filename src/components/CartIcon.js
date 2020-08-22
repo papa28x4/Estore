@@ -11,8 +11,8 @@ export class CartIcon extends Component {
     }
     render() {
         return (
-            <div>
-                <span className="icon-parent pt-3"><a href="/#" className="icon-bullet" data-content={this.props.totalQty} ><i className="fas fa-shopping-cart text-light fa-lg mr-3"></i></a></span>
+            <div className="cart-icon">
+                <span className="icon-parent pt-0"><a href="/#" className="icon-bullet" data-content={this.props.totalQty} ><i className="fas fa-shopping-cart text-light fa-lg mr-3"></i></a></span>
             </div>
         )
     }

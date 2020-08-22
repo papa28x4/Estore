@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import CartItem from './CartItem';
 import {connect} from 'react-redux';
 import {calcSubTotal, calcEstTotal} from '../reduxStore/action';
@@ -6,7 +6,6 @@ import {Link} from 'react-router-dom';
 
 export class Cart extends Component {
 
-    
     componentDidUpdate(prevProps, prevState){
         if(prevProps.cart !== this.props.cart){
             this.props.calcSubTotal() 

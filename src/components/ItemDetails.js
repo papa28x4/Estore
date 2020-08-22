@@ -22,7 +22,7 @@ export default class ItemDetails extends Component {
                     <Media>
                             <img style={{width:100, height:100}} src={item.url} alt="coffee"/>
                             <Media.Body className="ml-2">
-                               {buy.description}
+                               {item.productName}
                                 <Row className="show-grid mt-2">
                                     <Col sm={6}>
                                         <strong>{`$${item.price}`}</strong>

@@ -7,7 +7,7 @@ import Cart from './Cart';
 
 class Store extends Component {
     render() {
-        // console.log(this.props)
+       
         return (
             <>
                 <section className="music" >
