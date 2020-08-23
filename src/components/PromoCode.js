@@ -34,8 +34,8 @@ class PromoCode extends Component {
                     {this.state.open === false ? ' +': ' -'}
                 </Button>
                 <Collapse in={this.state.open}>
-                    <div>
-                        <Card>
+                    <div id="promo">
+                        <Card style={{border: '0'}}>
                         <form>
                             <div className="form-group">
                                 <input className="form-control" id="promoCode" type="text" placeholder="Enter a Promo Code" onChange={this.changeHandler} />
